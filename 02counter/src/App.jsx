@@ -11,6 +11,16 @@ function App() {
   const addValue =  () => {
     if(counter < 20){
       setCounter(counter + 1)
+
+      // setCounter( prevCOunter => prevCOunter + 1);
+      // setCounter( prevCOunter => prevCOunter + 1);
+      // setCounter( prevCOunter => prevCOunter + 1);
+      // setCounter( prevCOunter => prevCOunter + 1);
+      
+      // fiber algo work in batch that why 4 setCounter inc count by 4
+      // here we learn taht every hook function also have function call back in it
+      // above is the syntax 
+      // interview question
     }
     console.log("counter", counter);
   }
